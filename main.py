@@ -84,8 +84,6 @@ for i in range(count_none):
 # Рандомизация элементов в словаре
 random.shuffle(dictionary)
 
-# Вывод словаря
-# print(dictionary)
 
 # Двумерный массив (поле эксперимента)
 field = [['none' for i in range(N)] for i in range(N)]
@@ -116,7 +114,7 @@ for i in range(N):
         # Если точка не счастлива
         if is_happy(field, i, j, CNT_HAPPY):
             cnt_happy_start += 1
-print('Количество счастливых точек на старте: ', cnt_happy_start)
+print('Количество счастливых точек при старте: ', cnt_happy_start)
 print_array(field)
 
 # Фактическое количество шагов
